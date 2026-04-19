@@ -1,0 +1,32 @@
+<view class="card" wx:if="{{!orders.length && !loading}}">
+  <view class="empty">暂无订单</view>
+</view>
+
+<view class="card" wx:for="{{orders}}" wx:key="id">
+  <view class="head">
+    <text class="order-no">订单号 {{item.orderNo}}</text>
+    <text class="status">{{item.statusText}}</text>
+  </view>
+  <view class="sub">实付 ¥{{item.amountText}}</view>
+  <view class="sub" wx:if="{{item.shipment}}">物流：{{item.shipment.company}} {{item.shipment.trackingNo}}</view>
+  <view class="actions">
+    <button size="mini" bindtap="goDetail" data-id="{{item.id}}">查看详情</button>
+    <button
+      size="mini"
+      wx:if="{{item.status === 'pending_payment'}}"
+      bindtap="cancelOrder"
+      data-id="{{item.id}}"
+    >
+      取消订单
+    </button>
+    <button
+      size="mini"
+      type="primary"
+      wx:if="{{item.status === 'shipped'}}"
+      bindtap="confirmReceived"
+      data-id="{{item.id}}"
+    >
+      确认收货
+    </button>
+  </view>
+</view>

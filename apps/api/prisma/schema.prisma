@@ -1,0 +1,154 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id
+  openId    String    @unique
+  nickname  String
+  phone     String?
+  createdAt DateTime
+  addresses Address[]
+  orders    Order[]
+}
+
+model Address {
+  id        String @id
+  userId    String
+  name      String
+  phone     String
+  province  String
+  city      String
+  district  String
+  detail    String
+  isDefault Boolean
+  user      User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Category {
+  id       String    @id
+  name     String
+  parentId String?
+  sort     Int
+  enabled  Boolean
+  products Product[]
+}
+
+model Product {
+  id          String       @id
+  categoryId  String
+  title       String
+  subtitle    String
+  cover       String
+  imagesJson  String       @db.Text
+  detail      String       @db.Text
+  enabled     Boolean
+  recommended Boolean
+  sales       Int
+  category    Category     @relation(fields: [categoryId], references: [id])
+  skus        ProductSku[]
+}
+
+model ProductSku {
+  id         String  @id
+  productId  String
+  name       String
+  priceCents Int
+  stock      Int
+  code       String  @unique
+  product    Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+}
+
+model CartItem {
+  id        String   @id
+  userId    String
+  productId String
+  skuId     String
+  quantity  Int
+  checked   Boolean
+  createdAt DateTime
+}
+
+model Order {
+  id                String         @id
+  orderNo           String         @unique
+  userId            String
+  addressId         String
+  status            String
+  itemAmountCents   Int
+  shippingAmountCents Int
+  payableAmountCents Int
+  note              String?
+  createdAt         DateTime
+  paidAt            DateTime?
+  cancelledAt       DateTime?
+  completedAt       DateTime?
+  source            String
+  paymentDeadlineAt DateTime
+  user              User           @relation(fields: [userId], references: [id])
+  items             OrderItem[]
+  payments          PaymentRecord[]
+  shipments         Shipment[]
+}
+
+model OrderItem {
+  id         String @id
+  orderId    String
+  productId  String
+  skuId      String
+  title      String
+  skuName    String
+  quantity   Int
+  priceCents Int
+  amountCents Int
+  order      Order  @relation(fields: [orderId], references: [id], onDelete: Cascade)
+}
+
+model PaymentRecord {
+  id            String   @id
+  orderId       String
+  orderNo       String
+  channel       String
+  amountCents   Int
+  transactionId String?
+  status        String
+  rawNotify     String?  @db.Text
+  createdAt     DateTime
+  updatedAt     DateTime
+  order         Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+}
+
+model Shipment {
+  id                 String   @id
+  orderId            String
+  company            String
+  companyCode        String?
+  trackingNo         String
+  status             String?
+  tracksJson         String?  @db.Text
+  shippedAt          DateTime
+  expectedDeliveryAt DateTime?
+  order              Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+}
+
+model Banner {
+  id         String  @id
+  image      String
+  title      String
+  targetType String
+  targetId   String
+  sort       Int
+  enabled    Boolean
+}
+
+model AdminUser {
+  id       String @id
+  username String @unique
+  password String
+  role     String
+}

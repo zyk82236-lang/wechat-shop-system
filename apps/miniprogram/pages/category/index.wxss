@@ -1,0 +1,5 @@
+.layout { display: flex; min-height: 100vh; }
+.left { width: 220rpx; background: #fff; }
+.right { flex: 1; padding: 20rpx; }
+.cat { padding: 24rpx; border-left: 6rpx solid transparent; }
+.cat.active { color: #1677ff; border-left-color: #1677ff; background: #f0f6ff; }

@@ -1,0 +1,33 @@
+<view class="card">
+  <view class="title">确认订单</view>
+  <view wx:if="{{address}}">
+    <view>{{address.name}} {{address.phone}}</view>
+    <view class="sub">{{address.province}}{{address.city}}{{address.district}}{{address.detail}}</view>
+  </view>
+  <view wx:else class="sub">暂无地址，请先去我的页面添加地址。</view>
+</view>
+
+<view class="card">
+  <view class="sub">订单来源：{{source === 'cart' ? '购物车结算' : '立即购买'}}</view>
+  <view wx:if="{{previewItems.length}}">
+    <view class="title-sm">商品明细</view>
+    <view class="line" wx:for="{{previewItems}}" wx:key="id">
+      <view>{{item.title}}（{{item.skuName}}）x {{item.quantity}}</view>
+      <view>¥{{item.amountText}}</view>
+    </view>
+    <view class="line total">
+      <view>商品金额</view>
+      <view>¥{{itemAmountText}}</view>
+    </view>
+    <view class="line">
+      <view>运费</view>
+      <view>¥{{shippingAmountText}}</view>
+    </view>
+    <view class="line total">
+      <view>应付金额</view>
+      <view>¥{{payableAmountText}}</view>
+    </view>
+  </view>
+  <view wx:else class="sub">暂无可结算商品</view>
+  <button class="btn-primary" loading="{{creating}}" bindtap="submitOrder">提交并支付</button>
+</view>

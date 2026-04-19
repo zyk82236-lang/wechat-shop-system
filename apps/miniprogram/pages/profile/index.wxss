@@ -1,0 +1,11 @@
+.name { font-weight: 700; font-size: 32rpx; }
+.sub { margin-top: 8rpx; color: #666; }
+button { margin-top: 10rpx; }
+.label { font-size: 26rpx; color: #333; margin-bottom: 8rpx; }
+.api-input {
+  border: 1px solid #e5e6eb;
+  border-radius: 12rpx;
+  padding: 18rpx;
+  font-size: 26rpx;
+  background: #fff;
+}

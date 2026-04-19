@@ -1,0 +1,8 @@
+.title { font-size: 34rpx; font-weight: 700; margin-top: 16rpx; }
+.subtitle { color: #666; margin-top: 8rpx; }
+.sku-title { margin-top: 20rpx; font-weight: 700; }
+.sku-wrap { display: flex; flex-wrap: wrap; gap: 12rpx; margin-top: 10rpx; }
+.sku { padding: 10rpx 18rpx; border: 1rpx solid #ddd; border-radius: 999rpx; }
+.sku.active { border-color: #1677ff; color: #1677ff; }
+.actions { display: flex; gap: 10rpx; margin-top: 24rpx; }
+.actions button { flex: 1; }

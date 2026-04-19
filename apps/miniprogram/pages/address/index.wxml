@@ -1,0 +1,38 @@
+<view class="card">
+  <button class="btn-primary" bindtap="openCreate">新增地址</button>
+</view>
+
+<view class="card" wx:if="{{!list.length}}">
+  <view class="empty">暂无地址，请先新增</view>
+</view>
+
+<view class="card" wx:for="{{list}}" wx:key="id">
+  <view>{{item.name}} {{item.phone}}</view>
+  <view class="sub">{{item.province}}{{item.city}}{{item.district}}{{item.detail}}</view>
+  <view wx:if="{{item.isDefault}}" class="tag">默认地址</view>
+  <view class="actions">
+    <button size="mini" bindtap="openEdit" data-id="{{item.id}}">编辑</button>
+    <button size="mini" bindtap="setDefault" data-id="{{item.id}}" disabled="{{item.isDefault}}">设为默认</button>
+    <button size="mini" bindtap="removeAddress" data-id="{{item.id}}">删除</button>
+  </view>
+</view>
+
+<view class="mask" wx:if="{{showForm}}">
+  <view class="form-card">
+    <view class="title">{{form.id ? '编辑地址' : '新增地址'}}</view>
+    <input class="input" placeholder="收货人" value="{{form.name}}" data-key="name" bindinput="onInput" />
+    <input class="input" placeholder="手机号" value="{{form.phone}}" data-key="phone" bindinput="onInput" />
+    <input class="input" placeholder="省份" value="{{form.province}}" data-key="province" bindinput="onInput" />
+    <input class="input" placeholder="城市" value="{{form.city}}" data-key="city" bindinput="onInput" />
+    <input class="input" placeholder="区县" value="{{form.district}}" data-key="district" bindinput="onInput" />
+    <input class="input" placeholder="详细地址" value="{{form.detail}}" data-key="detail" bindinput="onInput" />
+    <view class="switch-line">
+      <text>设为默认地址</text>
+      <switch checked="{{form.isDefault}}" bindchange="onDefaultChange" />
+    </view>
+    <view class="form-actions">
+      <button size="mini" bindtap="closeForm">取消</button>
+      <button size="mini" type="primary" loading="{{saving}}" bindtap="saveAddress">保存</button>
+    </view>
+  </view>
+</view>

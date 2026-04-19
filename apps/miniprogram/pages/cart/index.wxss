@@ -1,0 +1,5 @@
+.row { display: flex; align-items: center; gap: 16rpx; padding: 16rpx 0; border-bottom: 1rpx solid #f0f0f0; }
+.mid { flex: 1; }
+.sub { color: #666; font-size: 24rpx; margin-top: 4rpx; }
+.qty-actions { display: flex; gap: 8rpx; margin-left: 8rpx; }
+.empty { color: #86909c; text-align: center; padding: 24rpx 0; }

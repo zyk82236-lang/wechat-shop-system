@@ -1,0 +1,6 @@
+.head { display: flex; justify-content: space-between; font-weight: 600; }
+.status { color: #1677ff; }
+.sub { margin-top: 8rpx; color: #666; }
+.order-no { max-width: 72%; }
+.actions { margin-top: 16rpx; display: flex; gap: 12rpx; }
+.empty { color: #86909c; text-align: center; padding: 20rpx 0; }

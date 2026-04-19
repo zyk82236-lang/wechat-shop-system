@@ -1,0 +1,841 @@
+0 verbose cli /Users/yorkzhang/.nvm/versions/node/v22.22.1/bin/node /Users/yorkzhang/.nvm/versions/node/v22.22.1/bin/npm
+1 info using npm@10.9.4
+2 info using node@v22.22.1
+3 silly config load:file:/Users/yorkzhang/.nvm/versions/node/v22.22.1/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/.npmrc
+5 silly config load:file:/Users/yorkzhang/.npmrc
+6 silly config load:file:/Users/yorkzhang/.nvm/versions/node/v22.22.1/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--workspace" "@shop/api" "--cache" ".npm-local-cache"
+9 verbose logfile logs-max:10 dir:/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/.npm-local-cache/_logs/2026-04-18T06_32_37_589Z-
+10 verbose logfile /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/.npm-local-cache/_logs/2026-04-18T06_32_37_589Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 verbose shrinkwrap failed to load node_modules/.package-lock.json missing from lockfile: node_modules/send/node_modules/ms
+14 silly idealTree buildDeps
+15 silly fetch manifest @prisma/client@^5.22.0
+16 silly packumentCache full:https://registry.npmjs.org/@prisma%2fclient cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/@prisma%2fclient 3081ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/@prisma%2fclient set size:undefined disposed:false
+19 silly fetch manifest prisma@^5.22.0
+20 silly packumentCache full:https://registry.npmjs.org/prisma cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/prisma 1252ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/prisma set size:undefined disposed:false
+23 silly fetch manifest ioredis@^5.4.1
+24 silly packumentCache full:https://registry.npmjs.org/ioredis cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/ioredis 197ms (cache revalidated)
+26 silly packumentCache full:https://registry.npmjs.org/ioredis set size:842503 disposed:false
+27 silly placeDep ROOT @prisma/client@5.22.0 OK for: @shop/api@0.1.0 want: ^5.22.0
+28 silly placeDep ROOT ioredis@5.10.1 OK for: @shop/api@0.1.0 want: ^5.4.1
+29 silly placeDep ROOT prisma@5.22.0 OK for: @shop/api@0.1.0 want: ^5.22.0
+30 silly fetch manifest @ioredis/commands@1.5.1
+31 silly packumentCache full:https://registry.npmjs.org/@ioredis%2fcommands cache-miss
+32 silly fetch manifest cluster-key-slot@^1.1.0
+33 silly packumentCache full:https://registry.npmjs.org/cluster-key-slot cache-miss
+34 silly fetch manifest denque@^2.1.0
+35 silly packumentCache full:https://registry.npmjs.org/denque cache-miss
+36 silly fetch manifest lodash.defaults@^4.2.0
+37 silly packumentCache full:https://registry.npmjs.org/lodash.defaults cache-miss
+38 silly fetch manifest lodash.isarguments@^3.1.0
+39 silly packumentCache full:https://registry.npmjs.org/lodash.isarguments cache-miss
+40 silly fetch manifest redis-errors@^1.2.0
+41 silly packumentCache full:https://registry.npmjs.org/redis-errors cache-miss
+42 silly fetch manifest redis-parser@^3.0.0
+43 silly packumentCache full:https://registry.npmjs.org/redis-parser cache-miss
+44 silly fetch manifest standard-as-callback@^2.1.0
+45 silly packumentCache full:https://registry.npmjs.org/standard-as-callback cache-miss
+46 silly fetch manifest @prisma/engines@5.22.0
+47 silly packumentCache full:https://registry.npmjs.org/@prisma%2fengines cache-miss
+48 http fetch GET 200 https://registry.npmjs.org/@ioredis%2fcommands 415ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/@ioredis%2fcommands set size:undefined disposed:false
+50 http fetch GET 200 https://registry.npmjs.org/standard-as-callback 696ms (cache miss)
+51 silly packumentCache full:https://registry.npmjs.org/standard-as-callback set size:undefined disposed:false
+52 http fetch GET 200 https://registry.npmjs.org/lodash.defaults 704ms (cache miss)
+53 silly packumentCache full:https://registry.npmjs.org/lodash.defaults set size:undefined disposed:false
+54 http fetch GET 200 https://registry.npmjs.org/redis-parser 714ms (cache miss)
+55 silly packumentCache full:https://registry.npmjs.org/redis-parser set size:undefined disposed:false
+56 http fetch GET 200 https://registry.npmjs.org/cluster-key-slot 719ms (cache miss)
+57 silly packumentCache full:https://registry.npmjs.org/cluster-key-slot set size:undefined disposed:false
+58 http fetch GET 200 https://registry.npmjs.org/denque 909ms (cache miss)
+59 silly packumentCache full:https://registry.npmjs.org/denque set size:undefined disposed:false
+60 http fetch GET 200 https://registry.npmjs.org/lodash.isarguments 963ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/lodash.isarguments set size:undefined disposed:false
+62 http fetch GET 200 https://registry.npmjs.org/redis-errors 1275ms (cache miss)
+63 silly packumentCache full:https://registry.npmjs.org/redis-errors set size:undefined disposed:false
+64 http fetch GET 200 https://registry.npmjs.org/@prisma%2fengines 2726ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/@prisma%2fengines set size:undefined disposed:false
+66 silly placeDep ROOT @ioredis/commands@1.5.1 OK for: ioredis@5.10.1 want: 1.5.1
+67 silly placeDep ROOT cluster-key-slot@1.1.2 OK for: ioredis@5.10.1 want: ^1.1.0
+68 silly placeDep ROOT denque@2.1.0 OK for: ioredis@5.10.1 want: ^2.1.0
+69 silly placeDep ROOT lodash.defaults@4.2.0 OK for: ioredis@5.10.1 want: ^4.2.0
+70 silly placeDep ROOT lodash.isarguments@3.1.0 OK for: ioredis@5.10.1 want: ^3.1.0
+71 silly placeDep ROOT redis-errors@1.2.0 OK for: ioredis@5.10.1 want: ^1.2.0
+72 silly placeDep ROOT redis-parser@3.0.0 OK for: ioredis@5.10.1 want: ^3.0.0
+73 silly placeDep ROOT standard-as-callback@2.1.0 OK for: ioredis@5.10.1 want: ^2.1.0
+74 silly placeDep ROOT @prisma/engines@5.22.0 OK for: prisma@5.22.0 want: 5.22.0
+75 silly fetch manifest @prisma/debug@5.22.0
+76 silly packumentCache full:https://registry.npmjs.org/@prisma%2fdebug cache-miss
+77 silly fetch manifest @prisma/fetch-engine@5.22.0
+78 silly packumentCache full:https://registry.npmjs.org/@prisma%2ffetch-engine cache-miss
+79 silly fetch manifest @prisma/get-platform@5.22.0
+80 silly packumentCache full:https://registry.npmjs.org/@prisma%2fget-platform cache-miss
+81 silly fetch manifest @prisma/engines-version@5.22.0-44.605197351a3c8bdd595af2d2a9bc3025bca48ea2
+82 silly packumentCache full:https://registry.npmjs.org/@prisma%2fengines-version cache-miss
+83 http fetch GET 200 https://registry.npmjs.org/@prisma%2fdebug 1086ms (cache miss)
+84 silly packumentCache full:https://registry.npmjs.org/@prisma%2fdebug set size:undefined disposed:false
+85 http fetch GET 200 https://registry.npmjs.org/@prisma%2fget-platform 2542ms (cache miss)
+86 silly packumentCache full:https://registry.npmjs.org/@prisma%2fget-platform set size:undefined disposed:false
+87 http fetch GET 200 https://registry.npmjs.org/@prisma%2ffetch-engine 3252ms (cache miss)
+88 silly packumentCache full:https://registry.npmjs.org/@prisma%2ffetch-engine set size:undefined disposed:false
+89 http fetch GET 200 https://registry.npmjs.org/@prisma%2fengines-version 4641ms (cache miss)
+90 silly packumentCache full:https://registry.npmjs.org/@prisma%2fengines-version set size:undefined disposed:false
+91 silly placeDep ROOT @prisma/debug@5.22.0 OK for: @prisma/engines@5.22.0 want: 5.22.0
+92 silly placeDep ROOT @prisma/engines-version@5.22.0-44.605197351a3c8bdd595af2d2a9bc3025bca48ea2 OK for: @prisma/engines@5.22.0 want: 5.22.0-44.605197351a3c8bdd595af2d2a9bc3025bca48ea2
+93 silly placeDep ROOT @prisma/fetch-engine@5.22.0 OK for: @prisma/engines@5.22.0 want: 5.22.0
+94 silly placeDep ROOT @prisma/get-platform@5.22.0 OK for: @prisma/engines@5.22.0 want: 5.22.0
+95 silly reify mark retired [
+95 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/send/node_modules/ms'
+95 silly reify ]
+96 silly reify mark retired [
+96 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vite-node/node_modules/debug'
+96 silly reify ]
+97 silly reify mark retired [
+97 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vite-node/node_modules/ms'
+97 silly reify ]
+98 silly reify mark retired [
+98 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vitest/node_modules/ms'
+98 silly reify ]
+99 silly reify mark retired [
+99 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vitest/node_modules/debug'
+99 silly reify ]
+100 silly reify mark retired [
+100 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@tokenizer/inflate/node_modules/debug'
+100 silly reify ]
+101 silly reify mark retired [
+101 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@tokenizer/inflate/node_modules/ms'
+101 silly reify ]
+102 silly reify moves {
+102 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/send/node_modules/ms': '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/send/node_modules/.ms-VyFWIuAK',
+102 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vite-node/node_modules/debug': '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vite-node/node_modules/.debug-TAQerlKx',
+102 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vite-node/node_modules/ms': '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vite-node/node_modules/.ms-jrgw9i8S',
+102 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vitest/node_modules/ms': '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vitest/node_modules/.ms-42V9yc23',
+102 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vitest/node_modules/debug': '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/vitest/node_modules/.debug-t76XRktI',
+102 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@tokenizer/inflate/node_modules/debug': '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@tokenizer/inflate/node_modules/.debug-Us0Uo4RI',
+102 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@tokenizer/inflate/node_modules/ms': '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@tokenizer/inflate/node_modules/.ms-Hi7lQ1oY'
+102 silly reify }
+103 silly audit bulk request {
+103 silly audit   '@shop/api': [ '0.1.0' ],
+103 silly audit   '@borewit/text-codec': [ '0.2.2' ],
+103 silly audit   '@cspotcode/source-map-support': [ '0.8.1' ],
+103 silly audit   '@jridgewell/trace-mapping': [ '0.3.9' ],
+103 silly audit   '@esbuild/aix-ppc64': [ '0.21.5' ],
+103 silly audit   '@esbuild/android-arm': [ '0.21.5' ],
+103 silly audit   '@esbuild/android-arm64': [ '0.21.5' ],
+103 silly audit   '@esbuild/android-x64': [ '0.21.5' ],
+103 silly audit   '@esbuild/darwin-arm64': [ '0.21.5' ],
+103 silly audit   '@esbuild/darwin-x64': [ '0.21.5' ],
+103 silly audit   '@esbuild/freebsd-arm64': [ '0.21.5' ],
+103 silly audit   '@esbuild/freebsd-x64': [ '0.21.5' ],
+103 silly audit   '@esbuild/linux-arm': [ '0.21.5' ],
+103 silly audit   '@esbuild/linux-arm64': [ '0.21.5' ],
+103 silly audit   '@esbuild/linux-ia32': [ '0.21.5' ],
+103 silly audit   '@esbuild/linux-loong64': [ '0.21.5' ],
+103 silly audit   '@esbuild/linux-mips64el': [ '0.21.5' ],
+103 silly audit   '@esbuild/linux-ppc64': [ '0.21.5' ],
+103 silly audit   '@esbuild/linux-riscv64': [ '0.21.5' ],
+103 silly audit   '@esbuild/linux-s390x': [ '0.21.5' ],
+103 silly audit   '@esbuild/linux-x64': [ '0.21.5' ],
+103 silly audit   '@esbuild/netbsd-x64': [ '0.21.5' ],
+103 silly audit   '@esbuild/openbsd-x64': [ '0.21.5' ],
+103 silly audit   '@esbuild/sunos-x64': [ '0.21.5' ],
+103 silly audit   '@esbuild/win32-arm64': [ '0.21.5' ],
+103 silly audit   '@esbuild/win32-ia32': [ '0.21.5' ],
+103 silly audit   '@esbuild/win32-x64': [ '0.21.5' ],
+103 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+103 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+103 silly audit   '@lukeed/csprng': [ '1.1.0' ],
+103 silly audit   '@nestjs/common': [ '10.4.22' ],
+103 silly audit   '@nestjs/core': [ '10.4.22' ],
+103 silly audit   '@nestjs/platform-express': [ '10.4.22' ],
+103 silly audit   '@nuxtjs/opencollective': [ '0.3.2' ],
+103 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-android-arm64': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-darwin-arm64': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-darwin-x64': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-freebsd-x64': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-loong64-musl': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-ppc64-musl': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-openbsd-x64': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.60.1' ],
+103 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.60.1' ],
+103 silly audit   '@tokenizer/inflate': [ '0.2.7' ],
+103 silly audit   '@tokenizer/token': [ '0.3.0' ],
+103 silly audit   '@tsconfig/node10': [ '1.0.12' ],
+103 silly audit   '@tsconfig/node12': [ '1.0.11' ],
+103 silly audit   '@tsconfig/node14': [ '1.0.3' ],
+103 silly audit   '@tsconfig/node16': [ '1.0.4' ],
+103 silly audit   '@types/estree': [ '1.0.8' ],
+103 silly audit   '@types/node': [ '22.19.17' ],
+103 silly audit   '@types/strip-bom': [ '3.0.0' ],
+103 silly audit   '@types/strip-json-comments': [ '0.0.30' ],
+103 silly audit   '@types/validator': [ '13.15.10' ],
+103 silly audit   '@vitest/expect': [ '2.1.9' ],
+103 silly audit   '@vitest/mocker': [ '2.1.9' ],
+103 silly audit   '@vitest/pretty-format': [ '2.1.9' ],
+103 silly audit   '@vitest/runner': [ '2.1.9' ],
+103 silly audit   '@vitest/snapshot': [ '2.1.9' ],
+103 silly audit   '@vitest/spy': [ '2.1.9' ],
+103 silly audit   '@vitest/utils': [ '2.1.9' ],
+103 silly audit   accepts: [ '1.3.8' ],
+103 silly audit   acorn: [ '8.16.0' ],
+103 silly audit   'acorn-walk': [ '8.3.5' ],
+103 silly audit   'ansi-styles': [ '4.3.0' ],
+103 silly audit   anymatch: [ '3.1.3' ],
+103 silly audit   'append-field': [ '1.0.0' ],
+103 silly audit   arg: [ '4.1.3' ],
+103 silly audit   'array-flatten': [ '1.1.1' ],
+103 silly audit   'assertion-error': [ '2.0.1' ],
+103 silly audit   'balanced-match': [ '1.0.2' ],
+103 silly audit   'binary-extensions': [ '2.3.0' ],
+103 silly audit   'body-parser': [ '1.20.4' ],
+103 silly audit   debug: [ '2.6.9', '4.4.3' ],
+103 silly audit   ms: [ '2.0.0', '2.1.3' ],
+103 silly audit   'brace-expansion': [ '1.1.14' ],
+103 silly audit   braces: [ '3.0.3' ],
+103 silly audit   'buffer-from': [ '1.1.2' ],
+103 silly audit   busboy: [ '1.6.0' ],
+103 silly audit   bytes: [ '3.1.2' ],
+103 silly audit   cac: [ '6.7.14' ],
+103 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+103 silly audit   'call-bound': [ '1.0.4' ],
+103 silly audit   chai: [ '5.3.3' ],
+103 silly audit   chalk: [ '4.1.2' ],
+103 silly audit   'check-error': [ '2.1.3' ],
+103 silly audit   chokidar: [ '3.6.0' ],
+103 silly audit   'class-transformer': [ '0.5.1' ],
+103 silly audit   'class-validator': [ '0.14.4' ],
+103 silly audit   'color-convert': [ '2.0.1' ],
+103 silly audit   'color-name': [ '1.1.4' ],
+103 silly audit   'concat-map': [ '0.0.1' ],
+103 silly audit   'concat-stream': [ '2.0.0' ],
+103 silly audit   consola: [ '2.15.3' ],
+103 silly audit   'content-disposition': [ '0.5.4' ],
+103 silly audit   'content-type': [ '1.0.5' ],
+103 silly audit   cookie: [ '0.7.2' ],
+103 silly audit   'cookie-signature': [ '1.0.7' ],
+103 silly audit   cors: [ '2.8.5' ],
+103 silly audit   'create-require': [ '1.1.1' ],
+103 silly audit   'deep-eql': [ '5.0.2' ],
+103 silly audit   depd: [ '2.0.0' ],
+103 silly audit   destroy: [ '1.2.0' ],
+103 silly audit   diff: [ '4.0.4' ],
+103 silly audit   'dunder-proto': [ '1.0.1' ],
+103 silly audit   'dynamic-dedupe': [ '0.3.0' ],
+103 silly audit   'ee-first': [ '1.1.1' ],
+103 silly audit   encodeurl: [ '2.0.0' ],
+103 silly audit   'es-define-property': [ '1.0.1' ],
+103 silly audit   'es-errors': [ '1.3.0' ],
+103 silly audit   'es-module-lexer': [ '1.7.0' ],
+103 silly audit   'es-object-atoms': [ '1.1.1' ],
+103 silly audit   esbuild: [ '0.21.5' ],
+103 silly audit   'escape-html': [ '1.0.3' ],
+103 silly audit   'estree-walker': [ '3.0.3' ],
+103 silly audit   etag: [ '1.8.1' ],
+103 silly audit   'expect-type': [ '1.3.0' ],
+103 silly audit   express: [ '4.22.1' ],
+103 silly audit   'path-to-regexp': [ '0.1.13', '3.3.0' ],
+103 silly audit   'fast-safe-stringify': [ '2.1.1' ],
+103 silly audit   fflate: [ '0.8.2' ],
+103 silly audit   'file-type': [ '20.4.1' ],
+103 silly audit   'fill-range': [ '7.1.1' ],
+103 silly audit   finalhandler: [ '1.3.2' ],
+103 silly audit   forwarded: [ '0.2.0' ],
+103 silly audit   fresh: [ '0.5.2' ],
+103 silly audit   'fs.realpath': [ '1.0.0' ],
+103 silly audit   fsevents: [ '2.3.3' ],
+103 silly audit   'function-bind': [ '1.1.2' ],
+103 silly audit   'get-intrinsic': [ '1.3.0' ],
+103 silly audit   'get-proto': [ '1.0.1' ],
+103 silly audit   glob: [ '7.2.3' ],
+103 silly audit   'glob-parent': [ '5.1.2' ],
+103 silly audit   gopd: [ '1.2.0' ],
+103 silly audit   'has-flag': [ '4.0.0' ],
+103 silly audit   'has-symbols': [ '1.1.0' ],
+103 silly audit   hasown: [ '2.0.3' ],
+103 silly audit   'http-errors': [ '2.0.1' ],
+103 silly audit   'iconv-lite': [ '0.4.24' ],
+103 silly audit   ieee754: [ '1.2.1' ],
+103 silly audit   inflight: [ '1.0.6' ],
+103 silly audit   inherits: [ '2.0.4' ],
+103 silly audit   'ipaddr.js': [ '1.9.1' ],
+103 silly audit   'is-binary-path': [ '2.1.0' ],
+103 silly audit   'is-core-module': [ '2.16.1' ],
+103 silly audit   'is-extglob': [ '2.1.1' ],
+103 silly audit   'is-glob': [ '4.0.3' ],
+103 silly audit   'is-number': [ '7.0.0' ],
+103 silly audit   iterare: [ '1.2.1' ],
+103 silly audit   'libphonenumber-js': [ '1.12.41' ],
+103 silly audit   loupe: [ '3.2.1' ],
+103 silly audit   'magic-string': [ '0.30.21' ],
+103 silly audit   'make-error': [ '1.3.6' ],
+103 silly audit   'math-intrinsics': [ '1.1.0' ],
+103 silly audit   'media-typer': [ '0.3.0' ],
+103 silly audit   'merge-descriptors': [ '1.0.3' ],
+103 silly audit   methods: [ '1.1.2' ],
+103 silly audit   mime: [ '1.6.0' ],
+103 silly audit   'mime-db': [ '1.52.0' ],
+103 silly audit   'mime-types': [ '2.1.35' ],
+103 silly audit   minimatch: [ '3.1.5' ],
+103 silly audit   minimist: [ '1.2.8' ],
+103 silly audit   mkdirp: [ '0.5.6', '1.0.4' ],
+103 silly audit   multer: [ '2.0.2' ],
+103 silly audit   nanoid: [ '3.3.11' ],
+103 silly audit   negotiator: [ '0.6.3' ],
+103 silly audit   'node-fetch': [ '2.7.0' ],
+103 silly audit   'normalize-path': [ '3.0.0' ],
+103 silly audit   'object-assign': [ '4.1.1' ],
+103 silly audit   'object-inspect': [ '1.13.4' ],
+103 silly audit   'on-finished': [ '2.4.1' ],
+103 silly audit   once: [ '1.4.0' ],
+103 silly audit   parseurl: [ '1.3.3' ],
+103 silly audit   'path-is-absolute': [ '1.0.1' ],
+103 silly audit   'path-parse': [ '1.0.7' ],
+103 silly audit   pathe: [ '1.1.2' ],
+103 silly audit   pathval: [ '2.0.1' ],
+103 silly audit   picocolors: [ '1.1.1' ],
+103 silly audit   picomatch: [ '2.3.2' ],
+103 silly audit   postcss: [ '8.5.10' ],
+103 silly audit   'proxy-addr': [ '2.0.7' ],
+103 silly audit   qs: [ '6.14.2' ],
+103 silly audit   'range-parser': [ '1.2.1' ],
+103 silly audit   'raw-body': [ '2.5.3' ],
+103 silly audit   'readable-stream': [ '3.6.2' ],
+103 silly audit   readdirp: [ '3.6.0' ],
+103 silly audit   'reflect-metadata': [ '0.2.2' ],
+103 silly audit   resolve: [ '1.22.12' ],
+103 silly audit   rimraf: [ '2.7.1' ],
+103 silly audit   rollup: [ '4.60.1' ],
+103 silly audit   rxjs: [ '7.8.2' ],
+103 silly audit   'safe-buffer': [ '5.2.1' ],
+103 silly audit   'safer-buffer': [ '2.1.2' ],
+103 silly audit   send: [ '0.19.2' ],
+103 silly audit   'serve-static': [ '1.16.3' ],
+103 silly audit   setprototypeof: [ '1.2.0' ],
+103 silly audit   'side-channel': [ '1.1.0' ],
+103 silly audit   'side-channel-list': [ '1.0.1' ],
+103 silly audit   'side-channel-map': [ '1.0.1' ],
+103 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+103 silly audit   siginfo: [ '2.0.0' ],
+103 silly audit   'source-map': [ '0.6.1' ],
+103 silly audit   'source-map-js': [ '1.2.1' ],
+103 silly audit   'source-map-support': [ '0.5.21' ],
+103 silly audit   stackback: [ '0.0.2' ],
+103 silly audit   statuses: [ '2.0.2' ],
+103 silly audit   'std-env': [ '3.10.0' ],
+103 silly audit   streamsearch: [ '1.1.0' ],
+103 silly audit   string_decoder: [ '1.3.0' ],
+103 silly audit   'strip-bom': [ '3.0.0' ],
+103 silly audit   'strip-json-comments': [ '2.0.1' ],
+103 silly audit   strtok3: [ '10.3.5' ],
+103 silly audit   'supports-color': [ '7.2.0' ],
+103 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+103 silly audit   tinybench: [ '2.9.0' ],
+103 silly audit   tinyexec: [ '0.3.2' ],
+103 silly audit   tinypool: [ '1.1.1' ],
+103 silly audit   tinyrainbow: [ '1.2.0' ],
+103 silly audit   tinyspy: [ '3.0.2' ],
+103 silly audit   'to-regex-range': [ '5.0.1' ],
+103 silly audit   toidentifier: [ '1.0.1' ],
+103 silly audit   'token-types': [ '6.1.2' ],
+103 silly audit   tr46: [ '0.0.3' ],
+103 silly audit   'tree-kill': [ '1.2.2' ],
+103 silly audit   'ts-node': [ '10.9.2' ],
+103 silly audit   'ts-node-dev': [ '2.0.0' ],
+103 silly audit   tsconfig: [ '7.0.0' ],
+103 silly audit   tslib: [ '2.8.1' ],
+103 silly audit   'type-is': [ '1.6.18' ],
+103 silly audit   typedarray: [ '0.0.6' ],
+103 silly audit   typescript: [ '5.9.3' ],
+103 silly audit   uid: [ '2.0.2' ],
+103 silly audit   'uint8array-extras': [ '1.5.0' ],
+103 silly audit   'undici-types': [ '6.21.0' ],
+103 silly audit   unpipe: [ '1.0.0' ],
+103 silly audit   'util-deprecate': [ '1.0.2' ],
+103 silly audit   'utils-merge': [ '1.0.1' ],
+103 silly audit   'v8-compile-cache-lib': [ '3.0.1' ],
+103 silly audit   validator: [ '13.15.35' ],
+103 silly audit   vary: [ '1.1.2' ],
+103 silly audit   vite: [ '5.4.21' ],
+103 silly audit   'vite-node': [ '2.1.9' ],
+103 silly audit   vitest: [ '2.1.9' ],
+103 silly audit   'webidl-conversions': [ '3.0.1' ],
+103 silly audit   'whatwg-url': [ '5.0.0' ],
+103 silly audit   'why-is-node-running': [ '2.3.0' ],
+103 silly audit   wrappy: [ '1.0.2' ],
+103 silly audit   xtend: [ '4.0.2' ],
+103 silly audit   yn: [ '3.1.1' ],
+103 silly audit   '@prisma/client': [ '5.22.0' ],
+103 silly audit   ioredis: [ '5.10.1' ],
+103 silly audit   prisma: [ '5.22.0' ],
+103 silly audit   '@ioredis/commands': [ '1.5.1' ],
+103 silly audit   'cluster-key-slot': [ '1.1.2' ],
+103 silly audit   denque: [ '2.1.0' ],
+103 silly audit   'lodash.defaults': [ '4.2.0' ],
+103 silly audit   'lodash.isarguments': [ '3.1.0' ],
+103 silly audit   'redis-errors': [ '1.2.0' ],
+103 silly audit   'redis-parser': [ '3.0.0' ],
+103 silly audit   'standard-as-callback': [ '2.1.0' ],
+103 silly audit   '@prisma/engines': [ '5.22.0' ],
+103 silly audit   '@prisma/debug': [ '5.22.0' ],
+103 silly audit   '@prisma/engines-version': [ '5.22.0-44.605197351a3c8bdd595af2d2a9bc3025bca48ea2' ],
+103 silly audit   '@prisma/fetch-engine': [ '5.22.0' ],
+103 silly audit   '@prisma/get-platform': [ '5.22.0' ]
+103 silly audit }
+104 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-win32-x64-msvc
+105 silly reify mark deleted [
+105 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-win32-x64-msvc'
+105 silly reify ]
+106 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-win32-x64-gnu
+107 silly reify mark deleted [
+107 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-win32-x64-gnu'
+107 silly reify ]
+108 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-win32-ia32-msvc
+109 silly reify mark deleted [
+109 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-win32-ia32-msvc'
+109 silly reify ]
+110 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-win32-arm64-msvc
+111 silly reify mark deleted [
+111 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-win32-arm64-msvc'
+111 silly reify ]
+112 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-openharmony-arm64
+113 silly reify mark deleted [
+113 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-openharmony-arm64'
+113 silly reify ]
+114 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-openbsd-x64
+115 silly reify mark deleted [
+115 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-openbsd-x64'
+115 silly reify ]
+116 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-x64-musl
+117 silly reify mark deleted [
+117 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-x64-musl'
+117 silly reify ]
+118 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-x64-gnu
+119 silly reify mark deleted [
+119 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-x64-gnu'
+119 silly reify ]
+120 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-s390x-gnu
+121 silly reify mark deleted [
+121 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-s390x-gnu'
+121 silly reify ]
+122 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-riscv64-musl
+123 silly reify mark deleted [
+123 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-riscv64-musl'
+123 silly reify ]
+124 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-riscv64-gnu
+125 silly reify mark deleted [
+125 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-riscv64-gnu'
+125 silly reify ]
+126 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-ppc64-musl
+127 silly reify mark deleted [
+127 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-ppc64-musl'
+127 silly reify ]
+128 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-ppc64-gnu
+129 silly reify mark deleted [
+129 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-ppc64-gnu'
+129 silly reify ]
+130 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-loong64-musl
+131 silly reify mark deleted [
+131 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-loong64-musl'
+131 silly reify ]
+132 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-loong64-gnu
+133 silly reify mark deleted [
+133 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-loong64-gnu'
+133 silly reify ]
+134 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-arm64-musl
+135 silly reify mark deleted [
+135 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-arm64-musl'
+135 silly reify ]
+136 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-arm64-gnu
+137 silly reify mark deleted [
+137 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-arm64-gnu'
+137 silly reify ]
+138 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-arm-musleabihf
+139 silly reify mark deleted [
+139 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-arm-musleabihf'
+139 silly reify ]
+140 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-arm-gnueabihf
+141 silly reify mark deleted [
+141 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-linux-arm-gnueabihf'
+141 silly reify ]
+142 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-freebsd-x64
+143 silly reify mark deleted [
+143 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-freebsd-x64'
+143 silly reify ]
+144 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-freebsd-arm64
+145 silly reify mark deleted [
+145 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-freebsd-arm64'
+145 silly reify ]
+146 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-darwin-x64
+147 silly reify mark deleted [
+147 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-darwin-x64'
+147 silly reify ]
+148 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-android-arm64
+149 silly reify mark deleted [
+149 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-android-arm64'
+149 silly reify ]
+150 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-android-arm-eabi
+151 silly reify mark deleted [
+151 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@rollup/rollup-android-arm-eabi'
+151 silly reify ]
+152 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/win32-x64
+153 silly reify mark deleted [
+153 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/win32-x64'
+153 silly reify ]
+154 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/win32-ia32
+155 silly reify mark deleted [
+155 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/win32-ia32'
+155 silly reify ]
+156 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/win32-arm64
+157 silly reify mark deleted [
+157 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/win32-arm64'
+157 silly reify ]
+158 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/sunos-x64
+159 silly reify mark deleted [
+159 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/sunos-x64'
+159 silly reify ]
+160 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/openbsd-x64
+161 silly reify mark deleted [
+161 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/openbsd-x64'
+161 silly reify ]
+162 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/netbsd-x64
+163 silly reify mark deleted [
+163 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/netbsd-x64'
+163 silly reify ]
+164 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-x64
+165 silly reify mark deleted [
+165 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-x64'
+165 silly reify ]
+166 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-s390x
+167 silly reify mark deleted [
+167 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-s390x'
+167 silly reify ]
+168 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-riscv64
+169 silly reify mark deleted [
+169 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-riscv64'
+169 silly reify ]
+170 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-ppc64
+171 silly reify mark deleted [
+171 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-ppc64'
+171 silly reify ]
+172 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-mips64el
+173 silly reify mark deleted [
+173 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-mips64el'
+173 silly reify ]
+174 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-loong64
+175 silly reify mark deleted [
+175 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-loong64'
+175 silly reify ]
+176 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-ia32
+177 silly reify mark deleted [
+177 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-ia32'
+177 silly reify ]
+178 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-arm64
+179 silly reify mark deleted [
+179 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-arm64'
+179 silly reify ]
+180 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-arm
+181 silly reify mark deleted [
+181 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/linux-arm'
+181 silly reify ]
+182 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/freebsd-x64
+183 silly reify mark deleted [
+183 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/freebsd-x64'
+183 silly reify ]
+184 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/freebsd-arm64
+185 silly reify mark deleted [
+185 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/freebsd-arm64'
+185 silly reify ]
+186 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/darwin-x64
+187 silly reify mark deleted [
+187 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/darwin-x64'
+187 silly reify ]
+188 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/android-x64
+189 silly reify mark deleted [
+189 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/android-x64'
+189 silly reify ]
+190 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/android-arm64
+191 silly reify mark deleted [
+191 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/android-arm64'
+191 silly reify ]
+192 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/android-arm
+193 silly reify mark deleted [
+193 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/android-arm'
+193 silly reify ]
+194 verbose reify failed optional dependency /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/aix-ppc64
+195 silly reify mark deleted [
+195 silly reify   '/Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system/node_modules/@esbuild/aix-ppc64'
+195 silly reify ]
+196 http cache @prisma/get-platform@https://registry.npmjs.org/@prisma/get-platform/-/get-platform-5.22.0.tgz 0ms (cache hit)
+197 http cache @prisma/fetch-engine@https://registry.npmjs.org/@prisma/fetch-engine/-/fetch-engine-5.22.0.tgz 0ms (cache hit)
+198 http cache @prisma/debug@https://registry.npmjs.org/@prisma/debug/-/debug-5.22.0.tgz 0ms (cache hit)
+199 http cache standard-as-callback@https://registry.npmjs.org/standard-as-callback/-/standard-as-callback-2.1.0.tgz 0ms (cache hit)
+200 http cache @prisma/engines@https://registry.npmjs.org/@prisma/engines/-/engines-5.22.0.tgz 0ms (cache hit)
+201 http cache redis-parser@https://registry.npmjs.org/redis-parser/-/redis-parser-3.0.0.tgz 0ms (cache hit)
+202 http cache lodash.defaults@https://registry.npmjs.org/lodash.defaults/-/lodash.defaults-4.2.0.tgz 0ms (cache hit)
+203 http cache lodash.isarguments@https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz 0ms (cache hit)
+204 http cache denque@https://registry.npmjs.org/denque/-/denque-2.1.0.tgz 0ms (cache hit)
+205 http cache cluster-key-slot@https://registry.npmjs.org/cluster-key-slot/-/cluster-key-slot-1.1.2.tgz 0ms (cache hit)
+206 http cache @ioredis/commands@https://registry.npmjs.org/@ioredis/commands/-/commands-1.5.1.tgz 0ms (cache hit)
+207 http cache prisma@https://registry.npmjs.org/prisma/-/prisma-5.22.0.tgz 0ms (cache hit)
+208 http cache ioredis@https://registry.npmjs.org/ioredis/-/ioredis-5.10.1.tgz 0ms (cache hit)
+209 http cache @prisma/client@https://registry.npmjs.org/@prisma/client/-/client-5.22.0.tgz 0ms (cache hit)
+210 http cache @prisma/engines-version@https://registry.npmjs.org/@prisma/engines-version/-/engines-version-5.22.0-44.605197351a3c8bdd595af2d2a9bc3025bca48ea2.tgz 0ms (cache hit)
+211 http cache fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 0ms (cache hit)
+212 http cache redis-errors@https://registry.npmjs.org/redis-errors/-/redis-errors-1.2.0.tgz 0ms (cache hit)
+213 silly tarball no local data for @prisma/get-platform@https://registry.npmjs.org/@prisma/get-platform/-/get-platform-5.22.0.tgz. Extracting by manifest.
+214 silly tarball no local data for @prisma/fetch-engine@https://registry.npmjs.org/@prisma/fetch-engine/-/fetch-engine-5.22.0.tgz. Extracting by manifest.
+215 silly tarball no local data for @prisma/debug@https://registry.npmjs.org/@prisma/debug/-/debug-5.22.0.tgz. Extracting by manifest.
+216 silly tarball no local data for standard-as-callback@https://registry.npmjs.org/standard-as-callback/-/standard-as-callback-2.1.0.tgz. Extracting by manifest.
+217 silly tarball no local data for @prisma/engines@https://registry.npmjs.org/@prisma/engines/-/engines-5.22.0.tgz. Extracting by manifest.
+218 silly tarball no local data for redis-parser@https://registry.npmjs.org/redis-parser/-/redis-parser-3.0.0.tgz. Extracting by manifest.
+219 silly tarball no local data for lodash.defaults@https://registry.npmjs.org/lodash.defaults/-/lodash.defaults-4.2.0.tgz. Extracting by manifest.
+220 silly tarball no local data for lodash.isarguments@https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz. Extracting by manifest.
+221 silly tarball no local data for denque@https://registry.npmjs.org/denque/-/denque-2.1.0.tgz. Extracting by manifest.
+222 silly tarball no local data for cluster-key-slot@https://registry.npmjs.org/cluster-key-slot/-/cluster-key-slot-1.1.2.tgz. Extracting by manifest.
+223 silly tarball no local data for @ioredis/commands@https://registry.npmjs.org/@ioredis/commands/-/commands-1.5.1.tgz. Extracting by manifest.
+224 silly tarball no local data for prisma@https://registry.npmjs.org/prisma/-/prisma-5.22.0.tgz. Extracting by manifest.
+225 silly tarball no local data for ioredis@https://registry.npmjs.org/ioredis/-/ioredis-5.10.1.tgz. Extracting by manifest.
+226 silly tarball no local data for @prisma/client@https://registry.npmjs.org/@prisma/client/-/client-5.22.0.tgz. Extracting by manifest.
+227 silly tarball no local data for @prisma/engines-version@https://registry.npmjs.org/@prisma/engines-version/-/engines-version-5.22.0-44.605197351a3c8bdd595af2d2a9bc3025bca48ea2.tgz. Extracting by manifest.
+228 silly tarball no local data for redis-errors@https://registry.npmjs.org/redis-errors/-/redis-errors-1.2.0.tgz. Extracting by manifest.
+229 http fetch GET 200 https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz 194ms (cache miss)
+230 http fetch GET 200 https://registry.npmjs.org/redis-parser/-/redis-parser-3.0.0.tgz 199ms (cache miss)
+231 http fetch GET 200 https://registry.npmjs.org/standard-as-callback/-/standard-as-callback-2.1.0.tgz 205ms (cache miss)
+232 http fetch GET 200 https://registry.npmjs.org/lodash.defaults/-/lodash.defaults-4.2.0.tgz 210ms (cache miss)
+233 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 221ms
+234 silly audit report {
+234 silly audit report   '@nestjs/core': [
+234 silly audit report     {
+234 silly audit report       id: 1116226,
+234 silly audit report       url: 'https://github.com/advisories/GHSA-36xv-jgw5-4q75',
+234 silly audit report       title: "@nestjs/core Improperly Neutralizes Special Elements in Output Used by a Downstream Component ('Injection')",
+234 silly audit report       severity: 'moderate',
+234 silly audit report       vulnerable_versions: '<=11.1.17',
+234 silly audit report       cwe: [Array],
+234 silly audit report       cvss: [Object]
+234 silly audit report     }
+234 silly audit report   ],
+234 silly audit report   esbuild: [
+234 silly audit report     {
+234 silly audit report       id: 1102341,
+234 silly audit report       url: 'https://github.com/advisories/GHSA-67mh-4wv8-2f99',
+234 silly audit report       title: 'esbuild enables any website to send any requests to the development server and read the response',
+234 silly audit report       severity: 'moderate',
+234 silly audit report       vulnerable_versions: '<=0.24.2',
+234 silly audit report       cwe: [Array],
+234 silly audit report       cvss: [Object]
+234 silly audit report     }
+234 silly audit report   ],
+234 silly audit report   'file-type': [
+234 silly audit report     {
+234 silly audit report       id: 1114301,
+234 silly audit report       url: 'https://github.com/advisories/GHSA-5v7r-6r5c-r473',
+234 silly audit report       title: 'file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header',
+234 silly audit report       severity: 'moderate',
+234 silly audit report       vulnerable_versions: '>=13.0.0 <21.3.1',
+234 silly audit report       cwe: [Array],
+234 silly audit report       cvss: [Object]
+234 silly audit report     },
+234 silly audit report     {
+234 silly audit report       id: 1114726,
+234 silly audit report       url: 'https://github.com/advisories/GHSA-j47w-4g3g-c36v',
+234 silly audit report       title: 'file-type: ZIP Decompression Bomb DoS via [Content_Types].xml entry',
+234 silly audit report       severity: 'moderate',
+234 silly audit report       vulnerable_versions: '>=20.0.0 <=21.3.1',
+234 silly audit report       cwe: [Array],
+234 silly audit report       cvss: [Object]
+234 silly audit report     }
+234 silly audit report   ],
+234 silly audit report   multer: [
+234 silly audit report     {
+234 silly audit report       id: 1113635,
+234 silly audit report       url: 'https://github.com/advisories/GHSA-xf7r-hgr6-v32p',
+234 silly audit report       title: 'Multer vulnerable to Denial of Service via incomplete cleanup',
+234 silly audit report       severity: 'high',
+234 silly audit report       vulnerable_versions: '<2.1.0',
+234 silly audit report       cwe: [Array],
+234 silly audit report       cvss: [Object]
+234 silly audit report     },
+234 silly audit report     {
+234 silly audit report       id: 1113636,
+234 silly audit report       url: 'https://github.com/advisories/GHSA-v52c-386h-88mc',
+234 silly audit report       title: 'Multer vulnerable to Denial of Service via resource exhaustion',
+234 silly audit report       severity: 'high',
+234 silly audit report       vulnerable_versions: '<2.1.0',
+234 silly audit report       cwe: [Array],
+234 silly audit report       cvss: [Object]
+234 silly audit report     },
+234 silly audit report     {
+234 silly audit report       id: 1113996,
+234 silly audit report       url: 'https://github.com/advisories/GHSA-5528-5vmv-3xc2',
+234 silly audit report       title: 'Multer Vulnerable to Denial of Service via Uncontrolled Recursion',
+234 silly audit report       severity: 'high',
+234 silly audit report       vulnerable_versions: '<2.1.1',
+234 silly audit report       cwe: [Array],
+234 silly audit report       cvss: [Object]
+234 silly audit report     }
+234 silly audit report   ],
+234 silly audit report   vite: [
+234 silly audit report     {
+234 silly audit report       id: 1116229,
+234 silly audit report       url: 'https://github.com/advisories/GHSA-4w7w-66w2-5vf9',
+234 silly audit report       title: 'Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling',
+234 silly audit report       severity: 'moderate',
+234 silly audit report       vulnerable_versions: '<=6.4.1',
+234 silly audit report       cwe: [Array],
+234 silly audit report       cvss: [Object]
+234 silly audit report     }
+234 silly audit report   ]
+234 silly audit report }
+235 silly packumentCache corgi:https://registry.npmjs.org/@nestjs%2fcore cache-miss
+236 silly packumentCache corgi:https://registry.npmjs.org/esbuild cache-miss
+237 silly packumentCache corgi:https://registry.npmjs.org/file-type cache-miss
+238 silly packumentCache corgi:https://registry.npmjs.org/multer cache-miss
+239 silly packumentCache corgi:https://registry.npmjs.org/vite cache-miss
+240 http fetch GET 200 https://registry.npmjs.org/@prisma/debug/-/debug-5.22.0.tgz 414ms (cache miss)
+241 http fetch GET 200 https://registry.npmjs.org/file-type 201ms (cache revalidated)
+242 silly packumentCache corgi:https://registry.npmjs.org/file-type set size:198411 disposed:false
+243 http fetch GET 200 https://registry.npmjs.org/esbuild 206ms (cache revalidated)
+244 silly packumentCache corgi:https://registry.npmjs.org/esbuild set size:885757 disposed:false
+245 http fetch GET 200 https://registry.npmjs.org/@nestjs%2fcore 216ms (cache revalidated)
+246 silly packumentCache corgi:https://registry.npmjs.org/@nestjs%2fcore set size:655965 disposed:false
+247 http fetch GET 200 https://registry.npmjs.org/vite 371ms (cache revalidated)
+248 silly packumentCache corgi:https://registry.npmjs.org/vite set size:2229030 disposed:false
+249 http fetch GET 200 https://registry.npmjs.org/multer 393ms (cache revalidated)
+250 silly packumentCache corgi:https://registry.npmjs.org/multer set size:70518 disposed:false
+251 silly packumentCache corgi:https://registry.npmjs.org/@nestjs%2fplatform-express cache-miss
+252 http fetch GET 200 https://registry.npmjs.org/@prisma/get-platform/-/get-platform-5.22.0.tgz 621ms (cache miss)
+253 http fetch GET 200 https://registry.npmjs.org/@prisma/engines/-/engines-5.22.0.tgz 638ms (cache miss)
+254 http fetch GET 200 https://registry.npmjs.org/@prisma/fetch-engine/-/fetch-engine-5.22.0.tgz 648ms (cache miss)
+255 http fetch GET 200 https://registry.npmjs.org/denque/-/denque-2.1.0.tgz 694ms (cache miss)
+256 http fetch GET 200 https://registry.npmjs.org/@ioredis/commands/-/commands-1.5.1.tgz 722ms (cache miss)
+257 http fetch GET 200 https://registry.npmjs.org/cluster-key-slot/-/cluster-key-slot-1.1.2.tgz 908ms (cache miss)
+258 http fetch GET 200 https://registry.npmjs.org/@prisma/engines-version/-/engines-version-5.22.0-44.605197351a3c8bdd595af2d2a9bc3025bca48ea2.tgz 923ms (cache miss)
+259 http fetch GET 200 https://registry.npmjs.org/redis-errors/-/redis-errors-1.2.0.tgz 1162ms (cache miss)
+260 http fetch GET 200 https://registry.npmjs.org/ioredis/-/ioredis-5.10.1.tgz 1415ms (cache miss)
+261 http fetch GET 200 https://registry.npmjs.org/@nestjs%2fplatform-express 1003ms (cache revalidated)
+262 silly packumentCache corgi:https://registry.npmjs.org/@nestjs%2fplatform-express set size:443843 disposed:false
+263 silly packumentCache corgi:https://registry.npmjs.org/@nestjs%2fcommon cache-miss
+264 http fetch GET 200 https://registry.npmjs.org/@nestjs%2fcommon 202ms (cache revalidated)
+265 silly packumentCache corgi:https://registry.npmjs.org/@nestjs%2fcommon set size:570658 disposed:false
+266 silly packumentCache corgi:https://registry.npmjs.org/@vitejs%2fplugin-react cache-miss
+267 silly packumentCache corgi:https://registry.npmjs.org/@vitest%2fmocker cache-miss
+268 silly packumentCache corgi:https://registry.npmjs.org/vite-node cache-miss
+269 silly packumentCache corgi:https://registry.npmjs.org/vitest cache-miss
+270 http fetch GET 200 https://registry.npmjs.org/@vitejs%2fplugin-react 205ms (cache revalidated)
+271 silly packumentCache corgi:https://registry.npmjs.org/@vitejs%2fplugin-react set size:112470 disposed:false
+272 http fetch GET 200 https://registry.npmjs.org/@vitest%2fmocker 214ms (cache revalidated)
+273 silly packumentCache corgi:https://registry.npmjs.org/@vitest%2fmocker set size:103916 disposed:false
+274 http fetch GET 200 https://registry.npmjs.org/vite-node 216ms (cache revalidated)
+275 silly packumentCache corgi:https://registry.npmjs.org/vite-node set size:453359 disposed:false
+276 http fetch GET 200 https://registry.npmjs.org/@prisma/client/-/client-5.22.0.tgz 2384ms (cache miss)
+277 http fetch GET 200 https://registry.npmjs.org/vitest 597ms (cache revalidated)
+278 silly packumentCache corgi:https://registry.npmjs.org/vitest set size:1218651 disposed:false
+279 http fetch GET 200 https://registry.npmjs.org/prisma/-/prisma-5.22.0.tgz 3423ms (cache miss)
+280 info run prisma@5.22.0 preinstall node_modules/prisma node scripts/preinstall-entry.js
+281 info run prisma@5.22.0 preinstall { code: 0, signal: null }
+282 info run @prisma/client@5.22.0 postinstall node_modules/@prisma/client node scripts/postinstall.js
+283 info run @prisma/engines@5.22.0 postinstall node_modules/@prisma/engines node scripts/postinstall.js
+284 info run @prisma/engines@5.22.0 postinstall { code: 0, signal: null }
+285 info run @prisma/client@5.22.0 postinstall { code: 0, signal: null }
+286 silly ADD node_modules/@prisma/get-platform
+287 silly ADD node_modules/@prisma/fetch-engine
+288 silly ADD node_modules/@prisma/engines-version
+289 silly ADD node_modules/@prisma/debug
+290 silly ADD node_modules/@prisma/engines
+291 silly ADD node_modules/standard-as-callback
+292 silly ADD node_modules/redis-parser
+293 silly ADD node_modules/redis-errors
+294 silly ADD node_modules/lodash.isarguments
+295 silly ADD node_modules/lodash.defaults
+296 silly ADD node_modules/denque
+297 silly ADD node_modules/cluster-key-slot
+298 silly ADD node_modules/@ioredis/commands
+299 silly ADD node_modules/prisma
+300 silly ADD node_modules/ioredis
+301 silly ADD node_modules/@prisma/client
+302 silly ADD node_modules/fsevents
+303 silly ADD
+304 silly ADD
+305 silly ADD
+306 silly ADD
+307 silly ADD
+308 silly ADD
+309 silly ADD
+310 silly ADD
+311 silly ADD
+312 silly ADD
+313 silly ADD
+314 silly ADD
+315 silly ADD
+316 silly ADD
+317 silly ADD
+318 silly ADD
+319 silly ADD
+320 silly ADD
+321 silly ADD
+322 silly ADD
+323 silly ADD
+324 silly ADD
+325 silly ADD
+326 silly ADD
+327 silly ADD
+328 silly ADD
+329 silly ADD
+330 silly ADD
+331 silly ADD
+332 silly ADD
+333 silly ADD
+334 silly ADD
+335 silly ADD
+336 silly ADD
+337 silly ADD
+338 silly ADD
+339 silly ADD
+340 silly ADD
+341 silly ADD
+342 silly ADD
+343 silly ADD
+344 silly ADD
+345 silly ADD
+346 silly ADD
+347 silly ADD
+348 silly ADD
+349 silly REMOVE node_modules/@tokenizer/inflate/node_modules/ms
+350 silly REMOVE node_modules/@tokenizer/inflate/node_modules/debug
+351 silly REMOVE node_modules/vitest/node_modules/debug
+352 silly REMOVE node_modules/vitest/node_modules/ms
+353 silly REMOVE node_modules/vite-node/node_modules/ms
+354 silly REMOVE node_modules/vite-node/node_modules/debug
+355 silly REMOVE node_modules/send/node_modules/ms
+356 verbose cwd /Users/yorkzhang/Documents/Codex/2026-04-17-openclaw-agent/wechat-shop-system
+357 verbose os Darwin 24.1.0
+358 verbose node v22.22.1
+359 verbose npm  v10.9.4
+360 verbose exit 0
+361 info ok

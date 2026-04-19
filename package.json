@@ -1,0 +1,22 @@
+{
+  "name": "wechat-shop-system",
+  "version": "0.1.0",
+  "description": "WeChat Mini Program shop system monorepo",
+  "private": true,
+  "main": "index.js",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "node ./scripts/dev-api-auto-port.mjs",
+    "build:api": "npm --workspace @shop/api run build",
+    "test:api": "npm --workspace @shop/api run test",
+    "smoke:api": "node ./scripts/smoke-api.mjs",
+    "dev:admin": "npm --workspace @shop/admin run dev",
+    "dev:admin:auto": "node ./scripts/dev-admin-auto-api.mjs",
+    "build:admin": "npm --workspace @shop/admin run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

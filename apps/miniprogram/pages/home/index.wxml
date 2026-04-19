@@ -1,0 +1,16 @@
+<view class="card">
+  <view class="title">轮播推荐</view>
+  <swiper autoplay indicator-dots circular style="height: 240rpx">
+    <swiper-item wx:for="{{banners}}" wx:key="id">
+      <image src="{{item.image}}" mode="aspectFill" style="width: 100%; height: 240rpx; border-radius: 12rpx" />
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="card">
+  <view class="title">推荐商品</view>
+  <view wx:for="{{products}}" wx:key="id" class="row" data-id="{{item.id}}" bindtap="goProduct">
+    <text>{{item.title}}</text>
+    <text>¥{{item.minPriceText}}</text>
+  </view>
+</view>

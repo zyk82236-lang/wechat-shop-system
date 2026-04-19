@@ -1,0 +1,19 @@
+<view class="card" wx:if="{{user}}">
+  <view class="name">{{user.nickname}}</view>
+  <view class="sub">OpenID: {{user.openId}}</view>
+</view>
+<view class="card">
+  <button bindtap="goOrders">我的订单</button>
+  <button bindtap="goAddress">地址管理</button>
+  <button open-type="contact">联系客服</button>
+</view>
+<view class="card">
+  <view class="label">API 地址</view>
+  <input
+    class="api-input"
+    value="{{apiBaseInput}}"
+    placeholder="例如 http://localhost:3000"
+    bindinput="onApiBaseInput"
+  />
+  <button type="primary" bindtap="saveApiBase">保存 API 地址</button>
+</view>

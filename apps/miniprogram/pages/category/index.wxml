@@ -1,0 +1,19 @@
+<view class="layout">
+  <view class="left">
+    <view
+      wx:for="{{categories}}"
+      wx:key="id"
+      class="cat {{activeCategoryId===item.id?'active':''}}"
+      data-id="{{item.id}}"
+      bindtap="switchCategory"
+    >
+      {{item.name}}
+    </view>
+  </view>
+  <view class="right">
+    <view wx:for="{{products}}" wx:key="id" class="card" data-id="{{item.id}}" bindtap="goProduct">
+      <view>{{item.title}}</view>
+      <view>¥{{item.minPriceText}}</view>
+    </view>
+  </view>
+</view>
