@@ -5,11 +5,11 @@ WORKDIR /app
 # Install dependencies with workspace lockfile for deterministic builds.
 COPY package.json package-lock.json ./
 COPY apps/api/package.json ./apps/api/package.json
-RUN npm ci --include=dev
+RUN npm install --include=dev
 
 # Copy source and build API workspace.
 COPY . .
-RUN npm --workspace @shop/api run build
+RUN npm --workspace @shop/api exec tsc -p tsconfig.json
 
 ENV NODE_ENV=production
 ENV PORT=3000
