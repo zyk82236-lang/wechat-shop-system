@@ -5,7 +5,7 @@ WORKDIR /app
 # Install dependencies with workspace lockfile for deterministic builds.
 COPY package.json package-lock.json ./
 COPY apps/api/package.json ./apps/api/package.json
-RUN npm ci
+RUN npm ci --include=dev
 
 # Copy source and build API workspace.
 COPY . .
