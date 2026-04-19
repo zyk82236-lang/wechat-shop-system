@@ -1,0 +1,7 @@
+node_modules
+apps/*/node_modules
+.git
+.github
+.npm-local-cache
+apps/api/dist
+*.log
